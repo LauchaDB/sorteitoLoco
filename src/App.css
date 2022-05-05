@@ -7,32 +7,94 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-titleHeader {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btnGeneral{
+  color: black; 
+  background: transparent;
+  border: 1.2px solid #000000;
+  transition: 0.8s; 
+}
+.btnGeneral:hover{
+  background-color: #008CBA;
+  color: white;
+}
+.GuardadoDePartic-input{
+  margin: 1em;
+}
+
+
+.partGanador{
+  transition: 2ms;
+}
+
+.h2Ganador{
+  color: rgb(133, 133, 133);
+  transition: 2ms;
+}
+
+
+.muestraDePartic{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.muestraDePartic button{
+  margin: 1em;
+}
+
+.mostrarPart{
+  width: 80%;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+.listaDeParticipantes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.li_participante{
+  flex-wrap: wrap;
+  list-style:none;
+  color: #BFBEBE;
+  margin:0 1em 0 0;
+}
+
+.Footer{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  color: #BFBEBE;
+
+  position:fixed;
+  left:0px;
+  width:100%;
+  
+}
+.Footer-text{
+  font-size: 1em;
+  color: darkgrey;
 }
